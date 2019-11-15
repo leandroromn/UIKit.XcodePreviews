@@ -54,14 +54,38 @@
 		FD09CFA2237E18D60042FED7 /* UIKit.XcodePreviews */ = {
 			isa = PBXGroup;
 			children = (
+				FD09CFB7237E1BFF0042FED7 /* Bootstrap */,
+				FD09CFB9237E1D8F0042FED7 /* Controllers */,
+				FD09CFB8237E1C240042FED7 /* Resources */,
+			);
+			path = UIKit.XcodePreviews;
+			sourceTree = "<group>";
+		};
+		FD09CFB7237E1BFF0042FED7 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
 				FD09CFA3237E18D60042FED7 /* AppDelegate.swift */,
 				FD09CFA5237E18D60042FED7 /* SceneDelegate.swift */,
-				FD09CFA7237E18D60042FED7 /* ViewController.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		FD09CFB8237E1C240042FED7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FD09CFAC237E18D70042FED7 /* Assets.xcassets */,
 				FD09CFAE237E18D70042FED7 /* LaunchScreen.storyboard */,
 				FD09CFB1237E18D70042FED7 /* Info.plist */,
 			);
-			path = UIKit.XcodePreviews;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD09CFB9237E1D8F0042FED7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD09CFA7237E18D60042FED7 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIKit.XcodePreviews/Info.plist;
+				INFOPLIST_FILE = UIKit.XcodePreviews/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIKit.XcodePreviews/Info.plist;
+				INFOPLIST_FILE = UIKit.XcodePreviews/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
