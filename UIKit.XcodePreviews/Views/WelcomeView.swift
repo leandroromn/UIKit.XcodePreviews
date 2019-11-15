@@ -211,7 +211,7 @@ extension WelcomeView: CustomViewDelegate {
         welcomeLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: .horizontal).isActive = true
         welcomeLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -.horizontal).isActive = true
 
-        notesLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: -12).isActive = true
+        notesLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: .titleVerticalNegative).isActive = true
         notesLabel.leadingAnchor.constraint(equalTo: welcomeLabel.leadingAnchor).isActive = true
         notesLabel.trailingAnchor.constraint(equalTo: welcomeLabel.trailingAnchor).isActive = true
 
@@ -230,10 +230,10 @@ extension WelcomeView: CustomViewDelegate {
         editImageView.heightAnchor.constraint(equalToConstant: .sectionImageHeight).isActive = true
 
         editTitleLabel.topAnchor.constraint(equalTo: editView.topAnchor).isActive = true
-        editTitleLabel.leadingAnchor.constraint(equalTo: editImageView.trailingAnchor, constant: 16).isActive = true
+        editTitleLabel.leadingAnchor.constraint(equalTo: editImageView.trailingAnchor, constant: .sectionHorizontal).isActive = true
         editTitleLabel.trailingAnchor.constraint(equalTo: editView.trailingAnchor).isActive = true
 
-        editSummaryLabel.topAnchor.constraint(equalTo: editTitleLabel.bottomAnchor, constant: 4).isActive = true
+        editSummaryLabel.topAnchor.constraint(equalTo: editTitleLabel.bottomAnchor, constant: .sectionVertical).isActive = true
         editSummaryLabel.leadingAnchor.constraint(equalTo: editTitleLabel.leadingAnchor).isActive = true
         editSummaryLabel.trailingAnchor.constraint(equalTo: editTitleLabel.trailingAnchor).isActive = true
         editSummaryLabel.bottomAnchor.constraint(equalTo: editView.bottomAnchor).isActive = true
@@ -249,10 +249,10 @@ extension WelcomeView: CustomViewDelegate {
         noteToSelfImageView.heightAnchor.constraint(equalToConstant: .sectionImageHeight).isActive = true
 
         noteToSelfTitleLabel.topAnchor.constraint(equalTo: noteToSelfView.topAnchor).isActive = true
-        noteToSelfTitleLabel.leadingAnchor.constraint(equalTo: noteToSelfImageView.trailingAnchor, constant: 16).isActive = true
+        noteToSelfTitleLabel.leadingAnchor.constraint(equalTo: noteToSelfImageView.trailingAnchor, constant: .sectionHorizontal).isActive = true
         noteToSelfTitleLabel.trailingAnchor.constraint(equalTo: noteToSelfView.trailingAnchor).isActive = true
 
-        noteToSelfSummaryLabel.topAnchor.constraint(equalTo: noteToSelfTitleLabel.bottomAnchor, constant: 4).isActive = true
+        noteToSelfSummaryLabel.topAnchor.constraint(equalTo: noteToSelfTitleLabel.bottomAnchor, constant: .sectionVertical).isActive = true
         noteToSelfSummaryLabel.leadingAnchor.constraint(equalTo: noteToSelfTitleLabel.leadingAnchor).isActive = true
         noteToSelfSummaryLabel.trailingAnchor.constraint(equalTo: noteToSelfTitleLabel.trailingAnchor).isActive = true
         noteToSelfSummaryLabel.bottomAnchor.constraint(equalTo: noteToSelfView.bottomAnchor).isActive = true
@@ -268,18 +268,18 @@ extension WelcomeView: CustomViewDelegate {
         sketchImageView.heightAnchor.constraint(equalToConstant: .sectionImageHeight).isActive = true
 
         sketchTitleLabel.topAnchor.constraint(equalTo: sketchView.topAnchor).isActive = true
-        sketchTitleLabel.leadingAnchor.constraint(equalTo: sketchImageView.trailingAnchor, constant: 16).isActive = true
+        sketchTitleLabel.leadingAnchor.constraint(equalTo: sketchImageView.trailingAnchor, constant: .sectionHorizontal).isActive = true
         sketchTitleLabel.trailingAnchor.constraint(equalTo: sketchView.trailingAnchor).isActive = true
 
-        sketchSummaryLabel.topAnchor.constraint(equalTo: sketchTitleLabel.bottomAnchor, constant: 4).isActive = true
+        sketchSummaryLabel.topAnchor.constraint(equalTo: sketchTitleLabel.bottomAnchor, constant: .sectionVertical).isActive = true
         sketchSummaryLabel.leadingAnchor.constraint(equalTo: sketchTitleLabel.leadingAnchor).isActive = true
         sketchSummaryLabel.trailingAnchor.constraint(equalTo: sketchTitleLabel.trailingAnchor).isActive = true
         sketchSummaryLabel.bottomAnchor.constraint(equalTo: sketchView.bottomAnchor).isActive = true
 
-        continueButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
+        continueButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: .buttonVertical).isActive = true
         continueButton.leadingAnchor.constraint(equalTo: sketchView.leadingAnchor).isActive = true
         continueButton.trailingAnchor.constraint(equalTo: sketchView.trailingAnchor).isActive = true
-        continueButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        continueButton.heightAnchor.constraint(equalToConstant: .buttonHeight).isActive = true
     }
     
     func setupExtraConfigurations() {
