@@ -313,7 +313,12 @@ struct WelcomeViewController_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WelcomeViewController()
-            WelcomeViewController().environment(\.colorScheme, .dark)
+                .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+                .previewDisplayName("iPhone 11 Pro")
+            
+            WelcomeViewController()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+                .previewDisplayName("iPhone 8")
         }
     }
     
