@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  UIKit.XcodePreviews
+
+  Created by Leandro Romano on 14/11/19.
+  Copyright © 2019 Leandro Romano. All rights reserved.
+*/
+
+"WELCOME_TO" = "Welcome to";
+"NOTES" = "Notes";
+"SUMMARY" = "Great new tools for notes synced to\nyour iCloud account.";
+
+"SECTION_1_TITLE" = "Add almost anything";
+"SECTION_1_SUMMARY" = "Capture documents, photos, maps, and more for a richer Notes experience.";
+
+"SECTION_2_TITLE" = "Note to self, or with anyone";
+"SECTION_2_SUMMARY" = "Invite others to view or make changes to a note.";
+
+"SECTION_3_TITLE" = "Sketch your thoughts";
+"SECTION_3_SUMMARY" = "Draw using just your finger.";
+
+"CONTINUE" = "Continue";

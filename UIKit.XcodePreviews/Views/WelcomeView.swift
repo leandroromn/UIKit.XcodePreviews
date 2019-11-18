@@ -22,8 +22,9 @@ class WelcomeView: UIView {
     private lazy var welcomeLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Welcome to"
+        label.text = .welcomeTo
         label.font = .heavyTitle
+        label.adjustsFontSizeToFitWidth = true
         label.translatesAutoresizingMaskIntoConstraints = false
 
         return label
@@ -32,7 +33,7 @@ class WelcomeView: UIView {
     private lazy var notesLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Notes"
+        label.text = .notes
         label.font = .heavyTitle
         label.textColor = .brownieYellow
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +44,7 @@ class WelcomeView: UIView {
     private lazy var summaryLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Great new tools for notes synced to\nyour iCloud account."
+        label.text = .summary
         label.numberOfLines = 0
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -71,8 +72,9 @@ class WelcomeView: UIView {
     private lazy var editTitleLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Add almost anything"
+        label.text = .section1Title
         label.font = .sectionTitle
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
 
         return label
@@ -80,7 +82,7 @@ class WelcomeView: UIView {
     private lazy var editSummaryLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Capture documents, photos, maps, and more for a richer Notes experience."
+        label.text = .section1Summary
         label.font = .sectionSummary
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -108,8 +110,9 @@ class WelcomeView: UIView {
     private lazy var noteToSelfTitleLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Note to self, or with anyone"
+        label.text = .section2Title
         label.font = .sectionTitle
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
 
         return label
@@ -117,7 +120,7 @@ class WelcomeView: UIView {
     private lazy var noteToSelfSummaryLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Invite others to view or make changes to a note."
+        label.text = .section2Summary
         label.font = .sectionSummary
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -145,8 +148,9 @@ class WelcomeView: UIView {
     private lazy var sketchTitleLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Sketch your thoughts"
+        label.text = .section3Title
         label.font = .sectionTitle
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
 
         return label
@@ -154,7 +158,7 @@ class WelcomeView: UIView {
     private lazy var sketchSummaryLabel: UILabel = {
         let label = UILabel()
 
-        label.text = "Draw using just your finger."
+        label.text = .section3Summary
         label.font = .sectionSummary
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -163,7 +167,7 @@ class WelcomeView: UIView {
     }()
 
     private lazy var continueButton: UIButton = {
-        let button = ContinueButton(title: "Continue")
+        let button = ContinueButton(title: .continueTitle)
 
         button.translatesAutoresizingMaskIntoConstraints = false
 
@@ -296,12 +300,10 @@ extension WelcomeViewController: UIViewControllerRepresentable {
     typealias UIViewControllerType = WelcomeViewController
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<WelcomeViewController>) -> WelcomeViewController {
-        return WelcomeViewController()
+        WelcomeViewController()
     }
 
-    func updateUIViewController(_ uiViewController: WelcomeViewController, context: UIViewControllerRepresentableContext<WelcomeViewController>) {
-
-    }
+    func updateUIViewController(_ uiViewController: WelcomeViewController, context: UIViewControllerRepresentableContext<WelcomeViewController>) { }
     
 }
 

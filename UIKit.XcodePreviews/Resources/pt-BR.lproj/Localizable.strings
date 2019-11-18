@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  UIKit.XcodePreviews
+
+  Created by Leandro Romano on 14/11/19.
+  Copyright © 2019 Leandro Romano. All rights reserved.
+*/
+
+"WELCOME_TO" = "Bem-vindo ao";
+"NOTES" = "Notas";
+
+"SUMMARY" = "Novas ferramentas excelentes para guardar notas sincronizadas na sua conta do iCloud.";
+
+"SECTION_1_TITLE" = "Adicione quase tudo";
+"SECTION_1_SUMMARY" = "Registre documentos, fotos, mapas, e mais para uma experiência completa.";
+
+"SECTION_2_TITLE" = "Anote para você, ou para qualquer pessoa";
+"SECTION_2_SUMMARY" = "Convite outras pessoas para visualizar ou realizar alterações a uma nota.";
+
+"SECTION_3_TITLE" = "Esboce seus pensamentos";
+"SECTION_3_SUMMARY" = "Desenhe simplesmente usando seu dedo.";
+
+"CONTINUE" = "Continuar";
