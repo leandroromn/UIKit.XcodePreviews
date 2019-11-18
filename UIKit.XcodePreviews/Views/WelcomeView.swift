@@ -314,7 +314,7 @@ struct WelcomeViewController_Previews: PreviewProvider {
         Group {
             WelcomeViewController()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
-                .previewDisplayName("iPhone 11 Pro")
+                .previewDisplayName("iPhone 11 Pro Max")
             
             WelcomeViewController()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
